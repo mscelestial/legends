@@ -1,0 +1,8 @@
+$primaryColor: #2C3747;
+
+
+@mixin boxRadius($property) {
+-webkit-border-radius: $property;
+       -moz-border-radius: $property;
+            border-radius: $property;
+}

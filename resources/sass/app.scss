@@ -1,0 +1,73 @@
+
+@import 'globalVar';
+
+
+body {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(146, 154, 167); /* For browsers that do not support gradients */
+    -webkit-background-image: linear-gradient(to bottom, #2C3747 ,#3A516F , #2C3747); /* Standard syntax (must be last) */
+       -moz-background-image: linear-gradient(to bottom, #2C3747 ,#3A516F , #2C3747); /* Standard syntax (must be last) */
+            background-image: linear-gradient(to bottom, #2C3747 ,#3A516F , #2C3747); /* Standard syntax (must be last) */
+}
+
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+input,
+select {
+    box-sizing: border-box;
+}
+
+header {
+    padding:50 0 20 0;
+    display: block;
+}
+
+.brand {
+    margin:auto;
+    display: block;
+    width:100%;
+    max-width:170px;
+}
+
+input,
+select {
+    width: 100%;
+    max-width: 400px;
+    height: 50px;
+    margin-bottom: 25px;
+    @include boxRadius(5px);
+    border: 3px solid #ADADAD;
+}
+
+
+.formTitle {
+    width: 100%;
+    text-align: center;
+}
+
+
+
+.heroForm {
+    width: 100%;
+    max-width: 500px;
+    display:block;
+    margin:auto;
+    padding:50px;
+    height: auto;
+    background: #ffffff;
+    @include boxRadius(10px);
+
+    label {
+        color: $primaryColor;
+        text-transform: uppercase;
+        font-size:11px;
+        font-weight: 600;
+        margin-bottom:5px;
+        display:block;
+    }
+}
